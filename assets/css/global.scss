@@ -1,0 +1,114 @@
+@import "variables";
+@import "animations";
+@import "font/text";
+@import "reusable/footer";
+@import "pages/home/title";
+@import "pages/home/home-project";
+@import "pages/home/home-contact";
+@import "pages/home/hobbies";
+
+.center-all {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main,
+footer,
+.home-projects,
+.interested,
+.hobbies,
+.center-top-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.center-top-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.center-bottom-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.space-between-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.space-between-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.right-col {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.left-col {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.left-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.interested .container,
+.right-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+  background: #FFFFFF;
+}
+
+#__nuxt {
+  overflow-x: hidden;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+.opacity-50 {
+  opacity: 0.5;
+}
+
+.opacity-70 {
+  opacity: 0.7;
+}
+
+button {
+  cursor: pointer;
+}
+
+.container {
+  max-width: 1180px;
+  width: 100%;
+}
+

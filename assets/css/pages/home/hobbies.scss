@@ -1,0 +1,65 @@
+.hobbies {
+  background-color: $white;
+  width: 100vw;
+  padding: 60px 75px 100px;
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    h1 {
+      max-width: 250px;
+      align-self: flex-start;
+    }
+  }
+}
+
+.workout {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  max-width: 586px;
+  width: 100%;
+  margin: 180px;
+  .left-col {
+    align-self: flex-end;
+    label {
+      margin: 40px 0 12px;
+    }
+    img, p {
+      max-width: 480px;
+      width: 100%;
+    }
+    img {
+      margin: 50px 0 30px;
+    }
+    .left-row {
+      h1 {
+        max-width: 108px;
+      }
+      .left-col {
+        h4 {
+          line-height: 20px;
+          margin: 0 0 0 ;
+        }
+        .mt {
+          margin: 4px 0 0;
+        }
+        h2 {
+          line-height: 36px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 719px){
+  .hobbies {
+    padding: 60px 45px 100px;
+  }
+}
+
+@media screen and (max-width: 479px){
+  .hobbies {
+    padding: 60px 20px 100px;
+  }
+}

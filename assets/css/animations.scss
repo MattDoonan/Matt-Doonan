@@ -1,0 +1,61 @@
+@keyframes up-down {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(5px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes typing-hello {
+  0% {
+    width: 0
+  }
+  25% {
+    width: 170px;
+  }
+  75% {
+    width: 170px;
+  }
+  100% {
+    width: 0;
+    display: none;
+  }
+}
+
+@keyframes typing-im-matt {
+  0% {
+    width: 0;
+    display: none;
+  }
+  79% {
+    display: none;
+    width: 0;
+  }
+  80% {
+    display: block;
+    width: 0;
+  }
+  100% {
+    width: 230px;
+  }
+}
+
+@keyframes show-content {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+
+}
+
+
+@keyframes blink-caret {
+  from, to { border-right-color: transparent }
+  50% { border-right-color: $white }
+}

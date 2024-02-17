@@ -1,0 +1,115 @@
+.interested {
+  background-color: $black;
+  width: 100vw;
+  padding: 140px 75px 40px;
+  position: relative;
+  overflow: hidden;
+  a {
+    text-decoration: none;
+  }
+  .background {
+    opacity: 0.5;
+    position: absolute;
+    background-image: url('/images/background/code-background.png');
+    background-size: cover;
+    background-position: left;
+    width: 63.19vw;
+    height: 460px;
+    left: 0;
+  }
+  .left-col {
+    margin-top: 20px;
+    max-width: 480px;
+    min-width: fit-content;
+    width: 33.33vw;
+    z-index: 1;
+    h3, label, h4, p {
+      padding-left: 8px;
+    }
+    label {
+      color: rgba(241, 241, 241, 0.7);
+      margin: 6px 0 20px;
+    }
+    h4 {
+      margin: 40px 0 6px;
+      opacity: 0;
+      transition: opacity ease-in-out 750ms;
+    }
+    .ref5,
+    p {
+      opacity: 0;
+      transition: opacity ease-in-out 750ms;
+    }
+    .left-row {
+      align-items: center;
+      margin: 75px 0 0;
+      a {
+        width: 40px;
+        height: 40px;
+      }
+      img {
+        height: 100%;
+      }
+      button {
+        align-items: center;
+        background: none;
+        border: 0;
+        padding: 0;
+        height: 30px;
+        margin: 0 0 0 12px;
+        span {
+          margin: 12px 0 0 6px;
+        }
+      }
+    }
+  }
+}
+
+.interested:has(.show) {
+  .left-col {
+    .rev1 {
+      opacity: 1;
+    }
+    .rev2 {
+      transition-delay: 100ms;
+      opacity: 1;
+    }
+    .rev3 {
+      transition-delay: 600ms;
+      opacity: 1;
+    }
+    .rev4 {
+      transition-delay: 700ms;
+      opacity: 1;
+    }
+    .ref5 {
+      transition-delay: 1200ms;
+      opacity: 1;
+    }
+  }
+}
+
+@media screen and (max-width: 719px) {
+  .interested {
+    padding: 140px 45px 80px;
+    .container {
+      justify-content: flex-start !important;
+      label {
+        margin: 6px 0 10px;
+      }
+      .left-row {
+        margin: 50px 0 0;
+      }
+    }
+    .background {
+      width: 100vw;
+      background:none;
+    }
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .interested {
+    padding: 140px 20px 20px;
+  }
+}

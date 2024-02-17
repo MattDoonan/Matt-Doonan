@@ -1,0 +1,51 @@
+.title {
+  width: 100vw;
+  height: 100vh;
+  background-color: $black;
+  padding: 0 20px;
+
+  .center-bottom-row {
+    width: 100%;
+    height: calc(50% + 30px);
+
+    h1 {
+      overflow: hidden;
+      text-align: center;
+      border-right: solid 3px $red;
+      border-left: solid 3px transparent;
+      padding: 0 4px;
+      white-space: nowrap;
+      width: 0;
+    }
+    h1:nth-child(1) {
+      animation: typing-hello 4000ms steps(8, end) forwards, blink-caret 900ms step-end infinite;
+      animation-delay: 500ms;
+    }
+    h1:nth-child(2) {
+      animation: typing-im-matt 6000ms steps(8, end) forwards, blink-caret 900ms step-end infinite;
+    }
+
+  }
+  .space-between-col {
+    width: 100%;
+    height: calc(50% - 30px);
+    padding: 60px 0 0 0;
+    align-items: center;
+    label {
+      margin-bottom: 4px;
+    }
+    img {
+      width: 26px;
+      margin-bottom: 40px;
+      animation: up-down 2000ms infinite, show-content 1200ms forwards;
+      animation-delay: 7000ms;
+      opacity: 0;
+    }
+
+    label {
+      opacity: 0;
+      animation: show-content 1200ms forwards;
+      animation-delay: 6500ms;
+    }
+  }
+}

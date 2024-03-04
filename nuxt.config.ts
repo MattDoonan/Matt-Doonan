@@ -7,4 +7,10 @@ export default defineNuxtConfig({
   modules: [
     "@nuxt/image",
   ],
+  image: {
+    provider: 'netlify',
+    netlify: {
+      baseUrl: process.env.IMAGES_URL
+    }
+  },
 })

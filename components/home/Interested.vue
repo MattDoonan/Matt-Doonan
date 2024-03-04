@@ -30,10 +30,10 @@ onMounted(() => {
     <div class="container">
       <div class="left-col">
         <h3 class="white-text">
-          Interested?
+          Lets Connect
         </h3>
         <label>
-          Get in <span class="red-text">contact</span> now
+          or have a look at my <span class="red-text">Socials</span> and <span class="red-text">CV</span>
         </label>
         <h4 class="white-text rev1">
           Email

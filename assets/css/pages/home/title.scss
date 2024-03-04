@@ -18,11 +18,11 @@
       width: 0;
     }
     h1:nth-child(1) {
-      animation: typing-hello 4000ms steps(8, end) forwards, blink-caret 900ms step-end infinite;
+      animation: typing-hello 4000ms steps(10, end) forwards, blink-caret 900ms step-end infinite;
       animation-delay: 500ms;
     }
     h1:nth-child(2) {
-      animation: typing-im-matt 6000ms steps(8, end) forwards, blink-caret 900ms step-end infinite;
+      animation: typing-im-matt 6000ms steps(10, end) forwards, blink-caret 900ms step-end infinite;
     }
 
   }
@@ -33,6 +33,12 @@
     align-items: center;
     label {
       margin-bottom: 4px;
+    }
+    button {
+      background: none;
+      padding: 0;
+      border: none;
+      width: 26px;
     }
     img {
       width: 26px;

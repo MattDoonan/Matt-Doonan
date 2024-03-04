@@ -61,14 +61,14 @@ onMounted(() => {
 </script>
 
 <template>
-  <section class="home-projects">
+  <section id="home-projects" class="home-projects">
     <div class="center-top-col">
       <div class="left-col">
         <h3 class="opacity-50 white-text">
-          I'm Fairly New To this
+          Design and Software are my passions
         </h3>
         <h1 class="white-text">
-          But here are some <span class="red-text">projects</span> I've done
+          Some of the best <span class="red-text">projects</span> I've done
         </h1>
       </div>
       <div class="project-container center-all">

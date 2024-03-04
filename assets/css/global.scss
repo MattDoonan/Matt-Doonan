@@ -6,7 +6,19 @@
 @import "pages/home/home-project";
 @import "pages/home/home-contact";
 @import "pages/home/hobbies";
+@import "pages/home/workXp";
 
+.col {
+  display: flex;
+  flex-direction: column;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.work-xp,
 .center-all {
   display: flex;
   justify-content: center;

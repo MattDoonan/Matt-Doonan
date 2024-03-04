@@ -4,3 +4,10 @@ export type project = {
     link: string | undefined;
     isSmall: boolean;
 }
+
+export type work = {
+    image: string,
+    date: string,
+    title: string,
+    link: string,
+}

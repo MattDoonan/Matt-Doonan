@@ -6,7 +6,7 @@
   <section class="title">
     <div class="center-bottom-row">
       <h1 class="white-text">
-        Hello
+        Welcome
       </h1>
       <h1 class="white-text">
         I'm Matt
@@ -24,11 +24,28 @@
           University of Canterbury
         </label>
       </div>
-      <NuxtImg src="/images/svg/arrows.svg" alt="arrows"/>
+      <button @click="scroll">
+        <NuxtImg src="/images/svg/arrows.svg" alt="arrows"/>
+      </button>
     </div>
   </section>
 </template>
 
-<style scoped>
+<script lang="ts">
 
-</style>
+export default {
+  methods: {
+    scroll() {
+      const targetElement = document.getElementById("home-projects");
+      if (targetElement) {
+        targetElement.scrollIntoView({ behavior: "smooth" });
+        setTimeout(() => {
+          targetElement.focus();
+          targetElement.click();
+        }, 500)
+      }
+    }
+  }
+}
+
+</script>

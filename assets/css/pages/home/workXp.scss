@@ -1,0 +1,42 @@
+.work-xp {
+  width: 100vw;
+  background-color: $black;
+  padding: 90px 75px 100px;
+  h1 {
+    max-width: 180px;
+    margin: 0 0 60px;
+  }
+  .left-row {
+    width: 100%;
+    gap: 155px;
+    article {
+      max-width: 180px;
+      width: 100%;
+      text-align: center;
+      img {
+        height: 100%;
+        max-height: 98px;
+        margin: 7px 0 12px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1079px){
+  .work-xp {
+    .left-row {
+      gap: 140px 80px;
+      flex-wrap: wrap;
+    }
+  }
+}
+
+@media screen and (max-width: 719px){
+  .work-xp {
+    padding: 70px 45px 100px;
+    .left-row {
+      gap: 140px 80px;
+      flex-wrap: wrap;
+    }
+  }
+}

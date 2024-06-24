@@ -4,7 +4,7 @@
 
 <template>
   <footer>
-    <NuxtLink to="https://www.linkedin.com/in/matthew-doonan-b569a1278/">
+    <NuxtLink to="https://www.linkedin.com/in/matthew-doonan/">
       <NuxtImg src="/images/svg/linkedin-low-op.svg"/>
     </NuxtLink>
     <button @click="download">
